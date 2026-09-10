@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="nav-links">
 
                 <a href="index.html">
-                    About Me
+                    Product
                 </a>
 
                 <a href="research.html">
