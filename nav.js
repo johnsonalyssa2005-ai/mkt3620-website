@@ -4,7 +4,8 @@ const links = [
   { href: './index.html', label: 'Home', page: 'index.html' },
   { href: './about.html', label: 'About', page: 'about.html' },
   { href: './portfolio.html', label: 'Portfolio', page: 'portfolio.html' },
-  { href: './contact.html', label: 'Contact', page: 'contact.html' }
+  { href: './contact.html', label: 'Contact', page: 'contact.html' },
+  { href: 'https://docs.google.com/forms/d/e/1FAIpQLSd1tQ_T35_RuWJyLl9rtYDpuMTSQQ0vzSdyGNrHPEFjeHUy2A/viewform?usp=header', label: 'Google Form', external: true }
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -21,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </button>
         <nav class="main-nav" aria-label="Main navigation">
           ${links.map(link => `
-            <a href="${link.href}" class="${link.page === currentPage ? 'active' : ''}">${link.label}</a>
+            <a href="${link.href}"${link.external ? ' target="_blank" rel="noopener noreferrer"' : ''}${link.page === currentPage ? ' class="active"' : ''}>${link.label}</a>
           `).join('')}
         </nav>
       </header>
