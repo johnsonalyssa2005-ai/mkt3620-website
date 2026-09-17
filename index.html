@@ -4,51 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alyssa Johnson - Professional Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Main Container centered with 10% screen background margins -->
   <div class="site-container">
-    
-    <!-- Header Section -->
     <header class="header">
-      <!-- Left Column: Logo -->
       <div class="logo-area">
         <h1>Alyssa Johnson</h1>
       </div>
 
-      <!-- Right Column: Info Graphic + Horizontal Navigations -->
       <div class="header-right">
         <div class="info-graphics">
-          Marketing Major | Brand Strategy & Digital Marketing | Leadership & Analytics Portfolio
+          Marketing Major | Brand Strategy &amp; Digital Marketing | Leadership &amp; Analytics Portfolio
         </div>
-        
-        <!-- Horizontal Primary Navigation Bar -->
-        <nav class="primary-nav-bar" id="primary-nav-top"></nav>
 
-        <!-- Horizontal Secondary Navigation Bar -->
-        <nav class="secondary-nav-bar" id="secondary-nav-top"></nav>
+        <nav class="primary-nav-bar" id="primary-nav-top" aria-label="Primary navigation"></nav>
+        <nav class="secondary-nav-bar" id="secondary-nav-top" aria-label="Secondary navigation"></nav>
       </div>
     </header>
 
-    <!-- Main Content Area (3 Columns) -->
     <div class="main-body">
-      
-      <!-- Left Sidebar Container for Dynamic Navigation -->
-      <aside class="sidebar-left" id="side-nav-container"></aside>
+      <aside class="sidebar-left" id="side-nav-container" aria-label="Sidebar sections"></aside>
 
-      <!-- Center Content Area -->
       <main class="content-center">
-        <!-- Hero Section -->
         <div class="hero-image" aria-label="Alyssa Johnson portfolio hero image">
-          <img src="assets/alyssa-portrait.jpg" alt="Alyssa Johnson portrait">
+          <img src="profile-photo.svg" alt="Alyssa Johnson portrait">
         </div>
 
-        <!-- Main Content Area (~400 words) -->
         <section class="main-text">
           <h2>Alyssa Johnson</h2>
-          
+
           <div class="bio-section" id="about">
             <h3>About Me</h3>
             <p>
@@ -78,7 +64,7 @@
           </div>
 
           <div class="bio-section" id="honors">
-            <h3>Honors & Philanthropy</h3>
+            <h3>Honors &amp; Philanthropy</h3>
             <p>
               I am committed to making a positive impact through campus philanthropic initiatives, including organizing promotional campaigns and fundraising events for local community partners. Community involvement has deepened my appreciation for ethical leadership, stakeholder management, and meaningful public relations.
             </p>
@@ -86,31 +72,26 @@
         </section>
       </main>
 
-      <!-- Right Sidebar (Sticky Content) -->
       <aside class="sidebar-right">
         <div class="sticky-box">
-          <p><strong>Sticky content such as</strong></p>
+          <p><strong>Quick Facts</strong></p>
           <ul>
             <li>Current Academic Year: Senior</li>
             <li>Major: Marketing</li>
             <li>College: Ivy College of Business</li>
             <li>University: Iowa State University</li>
-            <li>Contact: alyssaj@iastate.edu</li>
+            <li>Contact: <a href="mailto:alyssaj@iastate.edu">alyssaj@iastate.edu</a></li>
             <li>Social Links: LinkedIn / Portfolio</li>
           </ul>
         </div>
       </aside>
-
     </div>
 
-    <!-- Footer Area -->
     <footer class="footer">
-      Footer: © 2026 Alyssa Johnson | Iowa State University Ivy College of Business | Contact: alyssaj@iastate.edu | Privacy Statement | Portfolio Site
+      © 2026 Alyssa Johnson | Iowa State University Ivy College of Business | Contact: alyssaj@iastate.edu | Privacy Statement | Portfolio Site
     </footer>
-
   </div>
 
-  <!-- Reusable Navigation System -->
   <script src="nav.js"></script>
 </body>
 </html>
