@@ -176,7 +176,11 @@ h1 span {
 
 .left-sidebar,
 .right-sidebar,
-.content-panel {
+.content-panel,
+.about-panel,
+.project-card,
+.form-shell,
+.panel-block {
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: 18px;
@@ -220,12 +224,17 @@ h1 span {
 
 .hero-image {
   width: 100%;
-  height: 260px;
   margin-bottom: 1.5rem;
-  border-radius: 14px;
-  background:
-    linear-gradient(135deg, rgba(215, 119, 77, 0.12), rgba(22, 22, 22, 0.08)),
-    url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80") center/cover no-repeat;
+  border-radius: 18px;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(215, 119, 77, 0.12), rgba(22, 22, 22, 0.08));
+}
+
+.profile-photo {
+  width: 100%;
+  height: 310px;
+  object-fit: cover;
+  display: block;
 }
 
 .content-panel h2 {
@@ -278,6 +287,183 @@ h1 span {
   margin-top: 0.75rem;
 }
 
+.section-space {
+  margin-top: 2rem;
+}
+
+.about-grid,
+.contact-grid,
+.projects-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.about-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.about-panel {
+  padding: 1.5rem;
+}
+
+.accent-panel {
+  background: linear-gradient(180deg, #f6efe9 0%, #fff 100%);
+}
+
+.number {
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent-dark);
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.about-panel h2 {
+  margin-bottom: 0.8rem;
+}
+
+.about-panel p,
+.project-info p,
+.contact-copy p,
+.bio-copy p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.bio-portrait {
+  display: grid;
+  grid-template-columns: minmax(220px, 300px) 1fr;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.portrait-wrap {
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.bio-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bio-copy h2 {
+  margin-bottom: 0.9rem;
+}
+
+.quote-block {
+  margin-top: 2rem;
+  padding: 1.5rem 2rem;
+  border-left: 4px solid var(--accent);
+  background: rgba(215, 119, 77, 0.06);
+  border-radius: 0 12px 12px 0;
+}
+
+.quote-block p {
+  margin: 0;
+  font-size: clamp(1.2rem, 2vw, 1.7rem);
+  font-family: "Playfair Display", Georgia, serif;
+  color: var(--ink);
+}
+
+.projects-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.project-card {
+  overflow: hidden;
+}
+
+.project-card.project-large {
+  grid-column: span 2;
+}
+
+.project-art {
+  min-height: 180px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #fff;
+  font-weight: 700;
+}
+
+.project-art span {
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+.project-art strong {
+  margin-top: 0.5rem;
+  font-size: clamp(1.4rem, 2vw, 2rem);
+  line-height: 1.1;
+}
+
+.art-coral {
+  background: linear-gradient(135deg, #d7774d 0%, #ba5638 100%);
+}
+
+.art-blue {
+  background: linear-gradient(135deg, #1d4969 0%, #355a7b 100%);
+}
+
+.art-yellow {
+  background: linear-gradient(135deg, #c48c2f 0%, #a36e1e 100%);
+}
+
+.project-info {
+  padding: 1.25rem;
+}
+
+.project-info h2 {
+  margin-bottom: 0.7rem;
+}
+
+.contact-grid {
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: start;
+}
+
+.contact-copy,
+.form-shell {
+  padding: 1.5rem;
+}
+
+.contact-detail {
+  display: grid;
+  gap: 0.2rem;
+  margin-top: 1rem;
+}
+
+.detail-label {
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-dark);
+  font-weight: 700;
+}
+
+.form-shell h2 {
+  margin-bottom: 0.5rem;
+}
+
+.form-note {
+  margin: 0 0 1rem;
+  color: var(--muted);
+}
+
+iframe {
+  width: 100%;
+  min-height: 560px;
+  border: 0;
+  border-radius: 14px;
+}
+
 .site-footer {
   padding: 1.5rem 0 2.5rem;
   background: var(--nav);
@@ -299,8 +485,16 @@ h1 span {
 }
 
 @media (max-width: 900px) {
-  .page-layout {
+  .page-layout,
+  .about-grid,
+  .projects-grid,
+  .contact-grid,
+  .bio-portrait {
     grid-template-columns: 1fr;
+  }
+
+  .project-card.project-large {
+    grid-column: span 1;
   }
 
   .left-sidebar,
