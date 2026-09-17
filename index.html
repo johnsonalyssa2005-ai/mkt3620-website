@@ -1,106 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>My Website</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alyssa Johnson's marketing portfolio and contact information.">
+  <title>Alyssa Johnson | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./Nav.js" defer></script>
 </head>
-
 <body>
+  <div id="site-nav"></div>
 
-<div class="website">
+  <main class="container page-content">
+    <section class="page-heading">
+      <p class="eyebrow">Welcome</p>
+      <h1>Clear marketing ideas for a <span>stronger brand.</span></h1>
+      <p class="lead">I’m Alyssa Johnson, a marketing student at Iowa State University with a focus on strategy, storytelling, and building genuine customer connections.</p>
+    </section>
 
-    <!-- HEADER -->
-    <header>
-        <div class="logo">
-            LOGO
-        </div>
-
-        <div class="header-right">
-            <div class="graphic">
-                Information/graphic describing my website
-            </div>
-
-            <nav class="primary-nav">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-
-            <nav class="secondary-nav">
-                Secondary Navigation
-            </nav>
-        </div>
-    </header>
-
-
-    <!-- MAIN PAGE AREA -->
     <div class="page-layout">
+      <aside class="left-sidebar">
+        <h2>Quick Links</h2>
+        <nav class="side-nav" aria-label="Sidebar navigation">
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./portfolio.html">Portfolio</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+      </aside>
 
-        <!-- LEFT SIDE -->
-        <aside class="left-sidebar">
-            <h3>Navigation</h3>
+      <article class="content-panel">
+        <div class="hero-image" aria-label="Marketing and storytelling banner"></div>
 
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </aside>
+        <h2>Welcome to my website</h2>
+        <p>This site is designed to show my interest in marketing, customer experience, and sales strategy. I want the work here to feel polished, thoughtful, and easy to navigate—while still reflecting the personality behind the projects.</p>
 
+        <p>I enjoy turning ideas into meaningful experiences that connect with people. Whether it is a campaign concept, a consumer insight, or a communication strategy, I am interested in how strong ideas can guide action and build trust.</p>
 
-        <!-- CENTER -->
-        <main>
+        <div class="stats-row">
+          <div>
+            <strong>Marketing</strong>
+            <span>Strategy + storytelling</span>
+          </div>
+          <div>
+            <strong>Sales</strong>
+            <span>Relationship-building</span>
+          </div>
+          <div>
+            <strong>Brand</strong>
+            <span>Clear communication</span>
+          </div>
+        </div>
+      </article>
 
-            <div class="hero">
-                <img src="images/hero.jpg" alt="Hero image">
-            </div>
-
-            <h1>Welcome to My Website</h1>
-
-            <p>
-                This is where the main content of the website goes.
-                Your professor's example recommends approximately
-                400 words of content in this section.
-            </p>
-
-            <p>
-                You can continue adding your information here,
-                along with additional images, headings, and links.
-            </p>
-
-        </main>
-
-
-        <!-- RIGHT SIDE -->
-        <aside class="right-sidebar">
-
-            <h3>What's New</h3>
-
-            <p>News</p>
-            <p>Offers</p>
-            <p>General Information</p>
-
-            <h3>Follow Us</h3>
-
-            <p>Instagram</p>
-            <p>Facebook</p>
-
-        </aside>
-
+      <aside class="right-sidebar">
+        <h2>What’s New</h2>
+        <ul>
+          <li>Updated portfolio highlights</li>
+          <li>Current coursework and projects</li>
+          <li>Open to collaboration and ideas</li>
+        </ul>
+      </aside>
     </div>
+  </main>
 
-
-    <!-- FOOTER -->
-    <footer>
-        © 2026 My Website |
-        Contact |
-        Privacy Policy
-    </footer>
-
-</div>
-
+  <div id="site-footer"></div>
 </body>
 </html>
