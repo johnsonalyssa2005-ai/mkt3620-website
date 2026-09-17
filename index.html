@@ -3,89 +3,93 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alyssa Johnson | Portfolio</title>
+  <title>Alyssa Johnson - Professional Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div>
+
+  <!-- Main Container centered with 10% screen background margins -->
+  <div class="site-container">
+    
     <!-- Header Section -->
-    <header>
-      <div>
+    <header class="header">
+      <!-- Left Column: Logo -->
+      <div class="logo-area">
         <h1>Alyssa Johnson</h1>
       </div>
 
-      <div>
-        <div>
+      <!-- Right Column: Info Graphic + Horizontal Navigations -->
+      <div class="header-right">
+        <div class="info-graphics">
           Marketing Major | Brand Strategy & Digital Marketing | Leadership & Analytics Portfolio
         </div>
         
-        <nav>
-          <!-- Primary Navigation Links -->
-        </nav>
+        <!-- Horizontal Primary Navigation Bar -->
+        <nav class="primary-nav-bar" id="primary-nav-top"></nav>
 
-        <nav>
-          <!-- Secondary Navigation / Social Links -->
-        </nav>
+        <!-- Horizontal Secondary Navigation Bar -->
+        <nav class="secondary-nav-bar" id="secondary-nav-top"></nav>
       </div>
     </header>
 
-    <!-- Main Content Layout -->
-    <div>
-      <!-- Left Sidebar / Supporting Column -->
-      <aside></aside>
+    <!-- Main Content Area (3 Columns) -->
+    <div class="main-body">
+      
+      <!-- Left Sidebar Container for Dynamic Navigation -->
+      <aside class="sidebar-left" id="side-nav-container"></aside>
 
-      <!-- Main Body Content -->
-      <main>
-        <!-- Hero Image Container -->
-        <div aria-label="Alyssa Johnson portfolio hero image">
-          <img alt="Alyssa Johnson portrait" src="assets/alyssa-portrait.jpg">
+      <!-- Center Content Area -->
+      <main class="content-center">
+        <!-- Hero Section -->
+        <div class="hero-image" aria-label="Alyssa Johnson portfolio hero image">
+          <img src="assets/alyssa-portrait.jpg" alt="Alyssa Johnson portrait">
         </div>
 
-        <!-- About Section -->
-        <section id="about">
+        <!-- Main Content Area (~400 words) -->
+        <section class="main-text">
           <h2>Alyssa Johnson</h2>
           
-          <div>
+          <div class="bio-section" id="about">
             <h3>About Me</h3>
             <p>
-              Welcome to my personal portfolio. I am an ambitious Marketing student at Iowa State University with a dedicated focus on brand strategy, digital communications, market research, and leadership. My professional interests lie at the intersection of consumer insights and creative execution, and I am eager to build a career that blends data-driven strategic planning with innovative marketing campaigns.
+              Welcome to my personal portfolio. I am an ambitious Senior Marketing student at Iowa State University with a dedicated focus on brand strategy, digital marketing, consumer behavior, and campaign leadership. My professional interests lie at the intersection of creative execution and data-driven market research, and I am eager to continue building a career that blends strategic planning with impactful brand management.
             </p>
           </div>
 
-          <div>
+          <div class="bio-section" id="education">
             <h3>Education</h3>
             <p>
-              I am pursuing my Bachelor of Science in Marketing at Iowa State University’s Ivy College of Business. My academic experience has strengthened my understanding of consumer behavior, strategic brand management, digital marketing analytics, and integrated marketing communications.
+              I am pursuing my Bachelor of Science in Marketing at Iowa State University’s Ivy College of Business. My academic experience has strengthened my understanding of market research, integrated marketing communications, digital analytics, and strategic consumer messaging.
             </p>
           </div>
 
-          <div>
+          <div class="bio-section" id="experience">
             <h3>Experience</h3>
             <p>
-              My professional background spans digital marketing strategy, social media management, and brand promotion. Through internship rotations and campus agency work, I have gained hands-on experience analyzing audience engagement, crafting campaign strategies, managing content creation, and delivering measurable results for diverse brand initiatives.
+              My professional background spans digital marketing strategy, content creation, social media management, and promotional campaigns. Through hands-on marketing internships and student agency roles, I have gained practical experience evaluating campaign performance, analyzing audience analytics, managing multi-channel initiatives, and driving brand engagement.
             </p>
           </div>
 
-          <div>
+          <div class="bio-section" id="leadership">
             <h3>Leadership</h3>
             <p>
-              Leadership and service are central pillars of my collegiate involvement. Serving in executive leadership roles within campus organizations, I direct campaign initiatives, coordinate team operations, and foster collaborative environments that drive strategic goals and team success.
+              Leadership and community engagement are central pillars of my collegiate experience. Serving in executive and team lead positions within campus organizations, I direct campaign strategy, foster collaborative cross-functional teamwork, and maintain an organized, goal-oriented environment for peer initiatives.
             </p>
           </div>
 
-          <div>
+          <div class="bio-section" id="honors">
             <h3>Honors & Philanthropy</h3>
             <p>
-              I am committed to giving back through community involvement and campus outreach programs, including organizing fundraising initiatives and service projects across Iowa State University. Community service has helped shape my perspective on ethical leadership, team accountability, and the power of impact-driven communication.
+              I am committed to making a positive impact through campus philanthropic initiatives, including organizing promotional campaigns and fundraising events for local community partners. Community involvement has deepened my appreciation for ethical leadership, stakeholder management, and meaningful public relations.
             </p>
           </div>
         </section>
       </main>
 
-      <!-- Right Sidebar (Sticky Quick-Facts) -->
-      <aside>
-        <div>
-          <p><strong>Quick Facts</strong></p>
+      <!-- Right Sidebar (Sticky Content) -->
+      <aside class="sidebar-right">
+        <div class="sticky-box">
+          <p><strong>Sticky content such as</strong></p>
           <ul>
             <li>Current Academic Year: Senior</li>
             <li>Major: Marketing</li>
@@ -96,12 +100,17 @@
           </ul>
         </div>
       </aside>
+
     </div>
 
-    <!-- Footer Section -->
-    <footer>
+    <!-- Footer Area -->
+    <footer class="footer">
       Footer: © 2026 Alyssa Johnson | Iowa State University Ivy College of Business | Contact: alyssaj@iastate.edu | Privacy Statement | Portfolio Site
     </footer>
+
   </div>
+
+  <!-- Reusable Navigation System -->
+  <script src="nav.js"></script>
 </body>
 </html>
