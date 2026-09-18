@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Kaden Klein</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        /* Nav Styles */
+        .navbar {
+            background-color: #c8102e; /* Iowa State Red */
+            position: sticky;
+            top: 0;
+            width: 100%;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            z-index: 1000;
+        }
+        .nav-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            height: 60px;
+        }
+        .nav-brand {
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            gap: 25px;
+        }
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s ease;
+        }
+        .nav-links a:hover {
+            color: #F1BE48;
+        }
+
+        /* Page Layout & Responsive Form Embed */
+        .page-content {
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+        .form-card {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            width: 100%;
+            max-width: 700px;
+            text-align: center;
+        }
+        .form-card h1 {
+            color: #c8102e;
+            margin-top: 0;
+        }
+        .iframe-wrapper {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+        .iframe-wrapper iframe {
+            width: 100%;
+            border: 0;
+        }
+    </style>
+    <!-- Nav Script Integration -->
+    <script src="nav.js" defer></script>
+</head>
+<body>
+
+    <main class="page-content">
+        <div class="form-card">
+            <h1>Contact Me</h1>
+            <p>Please fill out the form below to get in touch!</p>
+            
+            <div class="iframe-wrapper">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd1tQ_T35_RuWJyLl9rtYDpuMTSQQ0vzSdyGNrHPEFjeHUy2A/viewform?embedded=true" width="640" height="641" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
