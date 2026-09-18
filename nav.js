@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const navHTML = `
         <nav class="navbar">
             <div class="nav-container">
-                <a href="index.html" class="nav-brand">Kaden Klein</a>
+                <a href="index.html" class="nav-brand">Alyssa Johnson</a>
                 <ul class="nav-links">
                     <li><a href="about.html">About me</a></li>
                     <li><a href="projects.html">Project</a></li>
