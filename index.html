@@ -73,18 +73,24 @@
             margin: 20px;
             border: 1px solid #f1d4db;
         }
-        .profile-img {
-            width: 160px;
-            height: 160px;
-            border-radius: 50%;
-            object-fit: cover;
-            /* Adjust object-position to shift the focal point down and bring more face into view */
-            object-position: center 20%; 
-            border: 4px solid #fbe3e8;
-            outline: 3px solid #d8a7b1;
-            margin-bottom: 20px;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
-        }
+           .profile-img {
+    /* Increased diameter of the circle frame */
+    width: 240px;
+    height: 240px;
+    
+    border-radius: 50%;
+    
+    /* Keeps the entire photo inside the frame without cropping top/bottom edges */
+    object-fit: contain; 
+    
+    /* Soft blush background to fill any outer edges seamlessly */
+    background-color: #fbe3e8; 
+    
+    border: 5px solid #fbe3e8;
+    outline: 3px solid #d8a7b1;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
         h1 {
             color: #b86b7d; /* Deep rose title */
             margin-bottom: 10px;
