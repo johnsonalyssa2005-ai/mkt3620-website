@@ -5,22 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me | Alyssa Johnson</title>
     <style>
+        :root {
+            --bg-color: #faf5f7;          /* Soft cream/pink background */
+            --primary-rose: #d8a7b1;      /* Main dusty rose accent */
+            --primary-rose-hover: #b86b7d;/* Deep rose title & hover state */
+            --accent-blush: #fbe3e8;      /* Soft blush highlight */
+            --border-pink: #f1d4db;       /* Subtle pink border */
+            --text-dark: #4a3e43;          /* Dark mauve body text */
+            --text-muted: #63535a;         /* Muted subtext */
+        }
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f7f6;
-            color: #333;
+            background-color: var(--bg-color);
+            color: var(--text-dark);
         }
 
         /* Nav Styles */
         .navbar {
-            background-color: #c8102e;
+            background-color: var(--primary-rose);
             position: sticky;
             top: 0;
             width: 100%;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            box-shadow: 0 2px 10px rgba(184, 137, 147, 0.2);
             z-index: 1000;
         }
         .nav-container {
@@ -34,9 +44,10 @@
         }
         .nav-brand {
             color: #ffffff;
-            font-weight: bold;
+            font-weight: 700;
             font-size: 1.2rem;
             text-decoration: none;
+            letter-spacing: 0.5px;
         }
         .nav-links {
             list-style: none;
@@ -52,24 +63,33 @@
             transition: color 0.2s ease;
         }
         .nav-links a:hover {
-            color: #F1BE48;
+            color: var(--accent-blush);
         }
 
+        /* Page Layout Styles */
         .page-content {
             display: flex;
             justify-content: center;
+            align-items: center;
+            min-height: calc(100vh - 60px);
             padding: 40px 20px;
         }
         .container {
             max-width: 700px;
             background: #ffffff;
             padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(216, 167, 177, 0.15);
+            border: 1px solid var(--border-pink);
         }
         h1 {
-            color: #c8102e;
+            color: var(--primary-rose-hover);
             margin-top: 0;
+            font-weight: 700;
+        }
+        p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
         }
     </style>
     <script src="nav.js" defer></script>
