@@ -1,0 +1,115 @@
+:root {
+    --bg-color: #faf5f7;          
+    --primary-rose: #d8a7b1;      
+    --primary-rose-hover: #b86b7d;
+    --accent-blush: #fbe3e8;      
+    --border-pink: #f1d4db;       
+    --text-dark: #4a3e43;          
+    --text-muted: #63535a;         
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+}
+
+/* --- Global Navigation Bar Styles --- */
+.navbar {
+    background-color: var(--primary-rose);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(184, 137, 147, 0.2);
+    z-index: 1000;
+}
+.nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 60px;
+}
+.nav-brand {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 25px;
+}
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+.nav-links a:hover {
+    color: var(--accent-blush);
+}
+
+/* --- Page Layout & Component Styles --- */
+.page-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 60px);
+}
+.container {
+    max-width: 650px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(216, 167, 177, 0.15);
+    text-align: center;
+    margin: 20px;
+    border: 1px solid var(--border-pink);
+}
+.profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 35%; 
+    border: 4px solid var(--accent-blush);
+    outline: 3px solid var(--primary-rose);
+    margin-bottom: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+h1 {
+    color: var(--primary-rose-hover);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+p.intro {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    margin-bottom: 30px;
+}
+.btn {
+    display: inline-block;
+    background-color: var(--primary-rose);
+    color: #ffffff;
+    padding: 12px 28px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(216, 167, 177, 0.3);
+}
+.btn:hover {
+    background-color: var(--primary-rose-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(184, 107, 125, 0.35);
+}
